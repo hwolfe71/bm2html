@@ -1,0 +1,38 @@
+changes.txt file for bm2html.pl by Herb Wolfe
+
+8/5/2000 
+	Found and fixed bug with -y (and possibly -d) options where the files
+weren't being place in their subdirectory.
+
+	Put in -x option. (Actually did this a couple days previous) for use on
+dos/windows files. Idea suggested by Dan Thatcher. (thanks)
+
+	Replaced multiple print statements with one line, however, this causes
+problems with spacing. May change back to using vars as tested earlier.
+
+8/6/2000
+	Changed some print statements to printf's to try and fix spacing
+
+8/14/2000
+	Added username var to put in title
+	Changed colors to my preferences, commenting out defaults I had created
+
+8/24/2000
+	Fixed another bug with -y option, related to the previous one.
+
+11/03/2001
+	Added option to use stylesheet
+
+1/27/2002
+	Added code to remove Netscape's comments
+
+09/2003
+	Made minor code optimizations
+	Returned color settings to defaults, since I use stylesheets
+	Stylesheet var now set to location of stylesheet in command line
+	Changed code for printing footer. Footer now read into array and
+	printed when needed 
+
+10/2005
+	Took out the align=center attribute from the <h1> tag used to display
+	the page title.
